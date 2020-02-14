@@ -1,21 +1,24 @@
 name:                pure-sticky
-version:             0.7.0.0
--- synopsis:            
--- description:         
+version:             0.8.0.0
+homepage:            purehs.org/doc/pure-sticky
 license:             BSD3
 license-file:        LICENSE
-author:              Sean Mackenzie
-maintainer:          sean@grump.ly
+author:              Sean Hickman
+maintainer:          sean@grumply.com
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
 
+source-repository head
+  type: git
+  location: https://github.com/grumply/pure-sticky.git
+
 library
   build-depends:
-    base >=4.9,
-    pure >= 0.7 && < 1,
-    pure-cond >= 0.7 && < 1,
-    pure-prop >= 0.7 && < 1
+    base,
+    pure,
+    pure-cond,
+    pure-prop
   exposed-modules: 
     Pure.Sticky
   hs-source-dirs:      src
