@@ -1,7 +1,7 @@
 {-# LANGUAGE MultiParamTypeClasses, PatternSynonyms, ViewPatterns, TypeFamilies, OverloadedStrings, DuplicateRecordFields, RecordWildCards, MultiWayIf, DeriveGeneric, CPP, FlexibleContexts #-}
 module Pure.Sticky where
 
-import Pure
+import Pure hiding (active,offset,context,not,(#))
 import Pure.Data.Cond
 import Pure.Data.Prop
 
