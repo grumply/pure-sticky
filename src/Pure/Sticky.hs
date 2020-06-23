@@ -56,7 +56,7 @@ data StickyState = SS
 
 instance Pure Sticky where
     view =
-        LibraryComponentIO $ \self ->
+        Component $ \self ->
             let
                 getRects = do
                     Sticky_ {..} <- ask self
